@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+        <nav class="navbar">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">Lattitude</a>
+                  </div>
+                  <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="maxtemp.html">Max Temperature</a></li>
+                        <li><a href="humidity.html">Humidity</a></li>
+                        <li><a href="cloudiness.html">Cloudiness</a></li>
+                        <li><a href="windspeed.html">Wind Speed</a></li>
+                      </ul>
+                    </li>
+                    <li class="active"><a href="comparision.html">Comparison</a></li>
+                    <li class="active"><a href="data.html">Data</a></li>
+              
+                  </ul>
+                </div>
+              </nav>
+              <div class = "container">
+                  <div class="row">                          
+                      <div class="col-md-12">
+                          <div class="panel panel-default">
+                              <div class="panel-body">
+              
+                                      <h2>Latitude vs. X</h2>
+                                      <hr>
+                                      <p>Click on any plot to get an in-depth analysis.</p>
+              
+                                      <div class="row">
+                                          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                              <h3 class = "text-center">vs Max Temperture</h3>
+                                              <a href="temperature.html"><img class = "img img-responsive" src="Resources/assets/images/Max Temp.png" style="width:80%" alt=""></a></div>
+                                          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                              <h3 class = "text-center">vs Humidity</h3>
+                                              <a href="humidity.html"><img class = "img img-responsive" src="Resources/assets/images/Humidity.png" style="width:80%" alt=""></a></div>
+                                      </div>
+              
+                                      <div class="row">
+                                          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                              <h3 class = "text-center">vs Cloudiness</h3>
+                                              <a href="cloudiness.html"><img class = "img img-responsive" src="Resources/assets/images/Cloudiness.png" style="width:80%" alt=""></a></div>
+                                          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                              <h3 class = "text-center">vs Wind Speed</h3>
+                                              <a href="windspeed.html"><img class = "img img-responsive" src="Resources/assets/images/Wind Speed.png" style="width:80%" alt=""></a></div>
+                                      </div>
+                                                  
+                              </div>
+                                  
+                                      </div>
+                                  </div>
+                      </div>
+                  </div>
+  </body>
+</html>

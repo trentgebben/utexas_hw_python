@@ -1,0 +1,170 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 18px;
+    line-height: 150%;
+    color: #333;
+    background: #efeee7;
+  }
+  
+  h1 {
+    font-size: 25px;
+    color: #21dada;
+    background: #fff;
+  }
+  
+  h2 {
+    font-size: 25px;
+    color: #21dada;
+    background: #fff;
+  }
+  h3{
+    color: #21dada;
+    font-size: 25px;
+    margin-left: 10%;
+  
+  }
+  p {
+    margin: 30px;
+  }
+  hr {
+    color: tomato;
+  }
+  
+  
+  /* Giving our navbar some padding and a background color */
+  .navbar {
+    padding: 0px;
+    background: #fff;
+  }
+  
+  /* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
+  .navbar-brand {
+    position: relative;
+    left: 50px; 
+    width: 150px;
+    height: 50px;
+    padding: 20px;    
+    cursor: pointer;
+    background:  #21dada;
+    border-radius: 3px;
+    color: white;
+    font-size: x-large;
+    font-family: "Times New Roman", times, serif;
+  
+  }
+  .active a {
+    color: #000;
+    text-decoration: none;
+  }
+  .dropdown-toggle{
+    color: #000;
+    text-decoration: none;
+  }
+  
+  
+  #city-latitude {
+    float: left;
+    width: 30%;
+    height: 35%;
+    margin-right: 3%;
+    margin-top: 1%;
+  }
+  
+  
+  #viwe {
+    float: right;
+    margin:  1.5%;
+    width: 30%;
+  }
+  
+  .fig{
+    width: 80%;
+    height: 80%;
+    margin:center;
+  }
+  
+  .column {
+    float: left;
+    padding: 20px;
+    margin-block-start: 10px;
+   
+  }
+  
+  .left {
+  width: 55%;
+  background: white;
+  margin-left: 5%;
+  }
+  
+  .right {
+  width: 33%;
+  background: white;
+  margin-left: 2%;
+  margin-right:5%;
+  /* height: 300px; */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .Timage{
+  width: 100%;
+  height:100%;
+  }
+  /* comression */
+  #comparison{
+    background: white;
+    width: 70%;
+    margin-top: 5%;
+  }
+  
+  /* data */
+  #comp{
+    background: red;
+    width: 1000%;
+    margin-top: 5%;
+  }
+  #data-table{
+    background: white; 
+  }
+  
+  /* media */
+  @media (max-width:600px) {
+    .navbar { 
+      background: #21dada;
+      margin-bottom: 0%; 
+    }
+    .navbar-right{
+      background: white;
+    }
+   
+    .left {
+      width: 80%;
+      margin-left: 5%;
+      margin-right:5%;
+      }
+  
+    .right {
+     width: 80%;
+     margin-left: 5%;
+     margin-right:5%;
+       }
+  
+    }
+  
+    /* .post {
+      margin-right: 30px;
+      margin-left: 30px;
+    }
+    .navbar ul {
+      visibility: hidden;
+    }
+    #nav-select {
+      visibility: visible;
+    } */
+  }

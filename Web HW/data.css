@@ -1,0 +1,77 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 18px;
+    line-height: 150%;
+    color: #333;
+    background: #efeee7;
+  }
+  .navbar {
+    padding: 0px;
+    background: #fff;
+  }
+
+  h2 {
+    font-size: 35px;
+    color: #21dada;
+    background: #fff;
+    margin-left: 3%;
+    /* margin-top:3%; */
+    padding: 2%;
+  }
+  p {
+    padding: 1.5%;
+    margin-left: 3%;
+    
+  }
+  
+  /* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
+  .navbar-brand {
+    position: relative;
+    left: 50px; 
+    width: 150px;
+    height: 50px;
+    padding: 20px;    
+    cursor: pointer;
+    background:  #21dada;
+    border-radius: 3px;
+    color: white;
+    font-size: x-large;
+    font-family: "Times New Roman", times, serif;
+  }
+  .active a {
+    color: #000;
+    text-decoration: none;
+  }
+  .dropdown-toggle{
+    color: #000;
+    text-decoration: none;
+  }
+
+ th {
+    
+    text-align: left;  
+}
+
+td, th {
+    /* border: 1px solid rgb(185, 181, 181); */
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #eeeded;}
+
+tr:hover {background-color: rgb(131, 130, 130);}
+
+
+
+/* media */
+@media (max-width:600px) {
+  .navbar { 
+    background: #21dada;
+    margin-bottom: 0%; 
+  }
+  .navbar-right{
+    background: white;
+  }
+}

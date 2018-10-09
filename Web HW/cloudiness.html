@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">Lattitude</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="maxtemp.html">Max Temperature</a></li>
+          <li><a href="humidity.html">Humidity</a></li>
+          <li><a href="cloudiness.html">Cloudiness</a></li>
+          <li><a href="windspeed.html">Wind Speed</a></li>
+        </ul>
+      </li>
+      <li class="active"><a href="comparision.html">Comparison</a></li>
+      <li class="active"><a href="data.html">Data</a></li>
+
+    </ul>
+  </div>
+</nav>
+<div class="row">
+  <div class="column left" >
+    <h2> Cloudiness</h2>
+    <hr>
+    <img class="fig" src="Resources/assets/images/Cloudiness.png" alt="">
+    <p>According to City latitude vs Cloudiness Analysis:
+      There is no specifice correlation between city's latitude and Cloudniess.
+      The correlation between City latitude vs Cloudiness is 0.13216632401685102, and it is low.</p>
+  </div>
+  <div class="column right" >
+    <h2>Visulizations</h2>
+    <hr>
+    <table>
+      <tr>
+        <td><a href="maxtemp.html"><img class="Timage" src="Resources/assets/images/Max Temp.png" alt=""  ></a></td>
+
+        <td><a href="humidity.html"><img class="Timage"  src="Resources/assets/images/Humidity.png" alt="" ></a></td>
+      </tr>
+      <tr>
+          <td><a href="cloudiness.html"><img class="Timage" src="Resources/assets/images/Cloudiness.png" alt="" ></a></td>
+          
+          <td><a href="windspeed.html"><img class="Timage" src="Resources/assets/images/Wind Speed.png" alt="" ></a></td>
+        </tr>
+    </table>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+  
+<!-- <main class="container">
+        <section id="main-info">
+        <header>
+          <h1>Summary: Latitude vs. X</h1>
+        </header>
+       
+          <section id="figure">
+            <img id="city-latitude" src="Max Temp.png" alt="">
+          </section>
+          <p>The purpose of this project was to analyze how  weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the openweatherMap API to assemble a dataset on over 500 cities.</p>
+          <p>After assembling dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualization created as part of analysis, as well as explanations and descriptions of any trends and correlations witnessed. </p>
+        </section> -->
+
+        
+</main>
+    
+
+</body>
+</html>
