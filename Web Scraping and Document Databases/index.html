@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Mission to Mars</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron text-center">
+        <h1>Mission to Mars</h1>
+        <p class="lead">
+          <a class="btn btn-primary" href="/scrape" role="button">Scrape New Data</a>
+        </p>
+      </div>
+      <div class="row">
+          <div class="col">
+            <h4>Latest Mars News</h4>
+            <h6>{{ marsdata.news_title }}</h6>
+            <p style="font-size:9pt">{{ marsdata.news_p }}</p>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col-8">
+            <h4>Feature Mars Image</h4>
+            <img src="{{ marsdata.featured_image_url }}" class="img-fluid">
+        </div>
+        <div class="col-4">
+            <blockquote class="margin: 10px solid gray">
+              <h6>Current Weather on Mars</h6>
+              <p style="font-size:8pt">{{ marsdata.mars_weather }}</p>
+            </blockquote>
+            <h6>Mars Facts</h6>
+            <div class="table-responsive" style="font-size:7pt">{{ marsdata.Mars_facts | safe }}</div>
+        </div>
+      </div>
+      <div class="row">
+          <div class="col text-center">
+            <br/>
+            <h3  font-weight: bold >Mars Hemispheres</h3>
+            <hr>
+          </div>
+      </div>
+      <div class="row">
+          
+            {% for hemi in marsdata.hemisphere_title_urls %}
+            <div class="col-6">
+            <div class="card" >
+                <div class="card-body">
+                    <h4 class="card-title">{{ hemi.title }}</h4>
+                  </div>
+              <img class="card-img-top"  src="{{ hemi.image_url }}" alt="Card image cap">
+            </div>
+          </div>
+            {% endfor %}
+         </div>
+         
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
